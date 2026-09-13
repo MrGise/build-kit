@@ -1,0 +1,8 @@
+{
+  "parent": "build_kit:block/layered_block_8",
+  "textures": {
+    "particle": "build_kit:block/oak_plate",
+    "sides": "build_kit:block/stages/oak_plate/oak_plate_8",
+    "top": "build_kit:block/oak_plate"
+  }
+}

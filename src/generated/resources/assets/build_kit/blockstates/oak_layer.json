@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "level=1": {
+      "model": "build_kit:block/oak_layer_1"
+    },
+    "level=10": {
+      "model": "build_kit:block/oak_layer_10"
+    },
+    "level=11": {
+      "model": "build_kit:block/oak_layer_11"
+    },
+    "level=12": {
+      "model": "build_kit:block/oak_layer_12"
+    },
+    "level=13": {
+      "model": "build_kit:block/oak_layer_13"
+    },
+    "level=14": {
+      "model": "build_kit:block/oak_layer_14"
+    },
+    "level=15": {
+      "model": "build_kit:block/oak_layer_15"
+    },
+    "level=16": {
+      "model": "build_kit:block/oak_layer"
+    },
+    "level=2": {
+      "model": "build_kit:block/oak_layer_2"
+    },
+    "level=3": {
+      "model": "build_kit:block/oak_layer_3"
+    },
+    "level=4": {
+      "model": "build_kit:block/oak_layer_4"
+    },
+    "level=5": {
+      "model": "build_kit:block/oak_layer_5"
+    },
+    "level=6": {
+      "model": "build_kit:block/oak_layer_6"
+    },
+    "level=7": {
+      "model": "build_kit:block/oak_layer_7"
+    },
+    "level=8": {
+      "model": "build_kit:block/oak_layer_8"
+    },
+    "level=9": {
+      "model": "build_kit:block/oak_layer_9"
+    }
+  }
+}

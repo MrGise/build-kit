@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_blocks",
+  "key": {
+    "#": {
+      "item": "minecraft:oak_pressure_plate"
+    }
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "item": "build_kit:oak_layer"
+  },
+  "show_notification": true
+}

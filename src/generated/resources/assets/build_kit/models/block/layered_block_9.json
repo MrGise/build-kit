@@ -1,0 +1,42 @@
+{
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "texture": "#top"
+        },
+        "east": {
+          "texture": "#sides"
+        },
+        "north": {
+          "texture": "#sides"
+        },
+        "south": {
+          "texture": "#sides"
+        },
+        "up": {
+          "texture": "#top"
+        },
+        "west": {
+          "texture": "#sides"
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        9,
+        16
+      ]
+    }
+  ],
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "build_kit:block/oak_plate",
+    "sides": "build_kit:block/stages/oak_plate/oak_plate_9",
+    "top": "build_kit:block/oak_plate"
+  }
+}

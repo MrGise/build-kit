@@ -1,0 +1,231 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "2"
+                  }
+                }
+              ],
+              "count": 2.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "3"
+                  }
+                }
+              ],
+              "count": 3.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "4"
+                  }
+                }
+              ],
+              "count": 4.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "5"
+                  }
+                }
+              ],
+              "count": 5.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "6"
+                  }
+                }
+              ],
+              "count": 6.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "7"
+                  }
+                }
+              ],
+              "count": 7.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "8"
+                  }
+                }
+              ],
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "9"
+                  }
+                }
+              ],
+              "count": 9.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "10"
+                  }
+                }
+              ],
+              "count": 10.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "11"
+                  }
+                }
+              ],
+              "count": 11.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "12"
+                  }
+                }
+              ],
+              "count": 12.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "13"
+                  }
+                }
+              ],
+              "count": 13.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "14"
+                  }
+                }
+              ],
+              "count": 14.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "15"
+                  }
+                }
+              ],
+              "count": 15.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "add": false,
+              "conditions": [
+                {
+                  "block": "build_kit:oak_layer",
+                  "condition": "minecraft:block_state_property",
+                  "properties": {
+                    "level": "16"
+                  }
+                }
+              ],
+              "count": 16.0,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ],
+          "name": "build_kit:oak_layer"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "build_kit:blocks/oak_layer"
+}
