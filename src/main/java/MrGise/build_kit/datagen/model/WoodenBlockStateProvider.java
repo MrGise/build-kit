@@ -7,7 +7,9 @@ import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.client.model.generators.*;
+import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
+import net.minecraftforge.client.model.generators.VariantBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
 import static MrGise.build_kit.BuildKit.util;
@@ -21,9 +23,9 @@ public class WoodenBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         for (int i = 1; i < 16; i++) {
             int level = i;
-            models().getBuilder("layered_block_" + i).renderType("cutout")
+            models().withExistingParent("layered_block_" + i, "block/block").renderType("cutout")
                     .texture("top", modLoc("block/oak_plate")).texture("sides",
-                            util.resourceUtil().affix().addSuffix(modLoc("block/stages/oak_plate/oak_plate"), String.valueOf(level)))
+                            util.affix().addSuffix(modLoc("block/stages/oak_plate/oak_plate"), String.valueOf(level)))
                     .texture("particle", modLoc("block/oak_plate"))
                     .element().from(0.0f, 0.0f, 0.0f).to(16.0f, i, 16.0f)
                     .allFaces((dir, fBuilder) -> {
@@ -55,12 +57,12 @@ public class WoodenBlockStateProvider extends BlockStateProvider {
 
         for (int level = 1; level < 16; level++) {
             ModelFile model_temp = models().withExistingParent(blockName + "_" + level, modLoc("layered_block_" + level))
-                    .texture("top", texture).texture("sides", util.resourceUtil().affix().addSuffix(leveledLocation, String.valueOf(level)))
+                    .texture("top", texture).texture("sides", util.affix().addSuffix(leveledLocation, String.valueOf(level)))
                     .texture("particle", texture);
             builder.partialState().with(LayeredBlock.LEVEL, level)
                     .modelForState().modelFile(model_temp).addModel();
         }
 
-        simpleBlockItem(block, model_16);
+        simpleBlockItem(block, models().getExistingFile(modLoc(blockName + "_1")));
     }
 }

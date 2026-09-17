@@ -28,6 +28,11 @@ public class ResourceLocationUtil {
     }
 
 
+    public ResourceLocation tabSection(String name) {
+        return withId("textures/gui/creative_tab/fancy_tab_section/" + name + ".png");
+    }
+
+
     public String blockPath(Block block) {
         return ForgeRegistries.BLOCKS.getKey(block).getPath();
     }

@@ -11,7 +11,15 @@ public class TranslationKeyUtil {
         this.modid = modid;
     }
 
+    public Component withTemplate(String type, String modid, String name) {
+        return Component.translatable(keyTemplate.replace("%type%", type).replace("%mod_id%", modid).replace("%name%", name));
+    }
+
     public Component defaultCMTTitle(String name) {
-        return Component.translatable(keyTemplate.replace("%type%", "creative_mode_tab").replace("%mod_id%", modid).replace("%name%", name));
+        return withId("creative_mode_tab", name);
+    }
+
+    public Component withId(String type, String name) {
+        return withTemplate(type, this.modid, name);
     }
 }
