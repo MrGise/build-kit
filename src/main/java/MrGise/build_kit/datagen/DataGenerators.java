@@ -4,7 +4,7 @@ import MrGise.build_kit.BuildKit;
 import MrGise.build_kit.datagen.data.ModLootTableProvider;
 import MrGise.build_kit.datagen.data.WoodRecipeProvider;
 import MrGise.build_kit.datagen.model.ModItemModelProvider;
-import MrGise.build_kit.datagen.model.WoodenBlockStateProvider;
+import MrGise.build_kit.datagen.model.ModBlockStateProvider;
 import MrGise.build_kit.datagen.tag.ModItemTagGenerator;
 import MrGise.build_kit.datagen.tag.WoodenBlockTagGenerator;
 import net.minecraft.core.HolderLookup;
@@ -32,7 +32,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), ModLootTableProvider.create(output));
 
         //Blocks
-        generator.addProvider(event.includeClient(), new WoodenBlockStateProvider(output, exFileHelper));
+        generator.addProvider(event.includeClient(), new ModBlockStateProvider(output, exFileHelper));
         //Items
         generator.addProvider(event.includeClient(), new ModItemModelProvider(output, exFileHelper));
 

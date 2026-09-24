@@ -1,5 +1,6 @@
 package MrGise.build_kit;
 
+import MrGise.build_kit.registry.block.StoneBlocks;
 import MrGise.build_kit.registry.block.WoodenBlocks;
 import MrGise.build_kit.registry.item.ModCreativeModeTabs;
 import MrGise.build_kit.util.UtilCollection;
@@ -44,6 +45,7 @@ public class BuildKit {
 
         /* Blocks */
         WoodenBlocks.register(modEventBus);
+        StoneBlocks.register(modEventBus);
 
         /* Creative Mode tabs */
         ModCreativeModeTabs.register(modEventBus);

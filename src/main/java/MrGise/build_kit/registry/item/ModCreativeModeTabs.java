@@ -1,6 +1,7 @@
 package MrGise.build_kit.registry.item;
 
 import MrGise.build_kit.BuildKit;
+import MrGise.build_kit.registry.block.StoneBlocks;
 import MrGise.build_kit.registry.block.WoodenBlocks;
 import net.mcexpanded.fancytabsections.FancyTabSections;
 import net.mcexpanded.fancytabsections.Section.SectionTextured;
@@ -23,9 +24,9 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, BuildKit.MODID);
 
 
-    public static final RegistryObject<CreativeModeTab> WOODEN_BLOCKS = registerTab("wooden_blocks",
+    public static final RegistryObject<CreativeModeTab> MAIN_MOD_TAB = registerTab("build_kit_main",
             () -> new CreativeModeTab.Builder(CreativeModeTab.Row.TOP, 1)
-            .icon(() -> util.itemUtil().toStack(WoodenBlocks.OAK_PLATING)).title(util.keyUtil().defaultCMTTitle("wooden_blocks"))
+            .icon(() -> util.itemUtil().toStack(WoodenBlocks.OAK_PLATING)).title(util.keyUtil().defaultCMTTitle("build_kit_main"))
             .withBackgroundLocation(util.resourceUtil().withId("textures/gui/creative_tab/wood_blocks.png"))
             .displayItems((params, output) -> output.accept(Items.BARRIER)).build());
 
@@ -36,14 +37,12 @@ public class ModCreativeModeTabs {
         eventBus.addListener(ModCreativeModeTabs::onCommonSetup);
     }
 
-    private static final ResourceLocation WOODEN_BLOCKS_rl = util.resourceUtil().withId("wooden_blocks");
-    private static final ResourceLocation MAIN_ITEMS_SECT = util.resourceUtil().withId("main_items");
-
-    private static final ResourceLocation STONE_BLOCKS = util.resourceUtil().withId("stone_blocks");
+    private static final ResourceLocation WOOD_ITEMS_SECT = util.resourceUtil().withId("wood_items");
+    private static final ResourceLocation STONE_ITEMS_SECT = util.resourceUtil().withId("stone_items");
 
     private static void registerTabSections() {
-        FancyTabSections.addSection(WOODEN_BLOCKS_rl,
-                new SectionTextured(MAIN_ITEMS_SECT, util.keyUtil().withId("fancy_tab_section", "main_items"),
+        FancyTabSections.addSection(MAIN_MOD_TAB.getId(),
+                new SectionTextured(WOOD_ITEMS_SECT, util.keyUtil().withId("fancy_tab_section", "wood_items"),
                 util.resourceUtil().tabSection("wood"), 0xC7A86F, true, false,
                 new ConglomerateOfItems()
                         .add(List.of(
@@ -51,6 +50,15 @@ public class ModCreativeModeTabs {
                                 util.itemUtil().toStack(WoodenBlocks.OAK_LAYER.get())
                                 )
                         ))
+        );
+        FancyTabSections.addSection(MAIN_MOD_TAB.getId(),
+                new SectionTextured(WOOD_ITEMS_SECT, util.keyUtil().withId("fancy_tab_section", "stone_items"),
+                util.resourceUtil().tabSection("stone"), 0x35353C, true, false,
+                new ConglomerateOfItems()
+                        .add(List.of(
+                                util.itemUtil().toStack(StoneBlocks.STONE_TILE.get())
+                                )
+                        )).setTextOutline(0x7E7E8C)
         );
     }
 

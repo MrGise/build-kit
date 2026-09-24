@@ -1,6 +1,7 @@
-// 1.20.1	2026-09-16T23:03:07.9640874	Block States: build_kit
+// 1.20.1	2026-09-17T23:38:09.474599	Block States: build_kit
 af6f0b45005b27b8d3eee6351c2c99d35b6765bb assets/build_kit/blockstates/oak_layer.json
 2d2ebb29f718d00b8e510b1212dc8a45c56e92c3 assets/build_kit/blockstates/oak_plating.json
+810df8298fcb09bc3a8c9243ba5feaec15247680 assets/build_kit/blockstates/stone_tile.json
 f40966cef514f95bc6c3be0d319739dee26e54cf assets/build_kit/models/block/layered_block_1.json
 fa013084a57cd19a897bdc0b08247ed8e14dce48 assets/build_kit/models/block/layered_block_10.json
 fd2e99195c7b41e2964e9f2bd75d67b4b6e61595 assets/build_kit/models/block/layered_block_11.json
@@ -33,5 +34,7 @@ d503930744bc2a5e1970ff82971f8c00d7586461 assets/build_kit/models/block/oak_layer
 b999dfa89b9dd263bff0a695f5652597315a93f2 assets/build_kit/models/block/oak_layer_8.json
 ca9e03e973c475f0f33769f0042f485447a14322 assets/build_kit/models/block/oak_layer_9.json
 652a971afe13ebe2564ba2bf7ed7ef2c18319d6a assets/build_kit/models/block/oak_plating.json
+1a503d46f36226105fff768ee47848f6b88baa11 assets/build_kit/models/block/stone_tile.json
 1ae1af303792f3e5a67aa89934cc871441c7786d assets/build_kit/models/item/oak_layer.json
 8e64f02e9d1c4a0470c9397d509f6ae94ce89948 assets/build_kit/models/item/oak_plating.json
+fd960093c2f7ffa5d516062dea9990da1653cf69 assets/build_kit/models/item/stone_tile.json

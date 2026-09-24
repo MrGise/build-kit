@@ -1,6 +1,7 @@
 package MrGise.build_kit.datagen.model;
 
 import MrGise.build_kit.BuildKit;
+import MrGise.build_kit.registry.block.StoneBlocks;
 import MrGise.build_kit.registry.block.WoodenBlocks;
 import MrGise.build_kit.types.block.LayeredBlock;
 import net.minecraft.core.Direction;
@@ -14,8 +15,8 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 
 import static MrGise.build_kit.BuildKit.util;
 
-public class WoodenBlockStateProvider extends BlockStateProvider {
-    public WoodenBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+public class ModBlockStateProvider extends BlockStateProvider {
+    public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, BuildKit.MODID, exFileHelper);
     }
 
@@ -37,10 +38,14 @@ public class WoodenBlockStateProvider extends BlockStateProvider {
                     }).end();
         }
 
+        // Wood
         layeredBlock((LayeredBlock) WoodenBlocks.OAK_LAYER.get(), modLoc("block/oak_plate"),
                 modLoc("block/stages/oak_plate/oak_plate"));
 
         simpleBlockWithItem(WoodenBlocks.OAK_PLATING.get(), modLoc("block/oak_plate"));
+
+        // Stone
+        simpleBlockWithItem(StoneBlocks.STONE_TILE.get(), modLoc("block/stone_plate"));
     }
 
     private void simpleBlockWithItem(Block block, ResourceLocation texture) {

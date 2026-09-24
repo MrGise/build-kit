@@ -1,4 +1,5 @@
 {
-  "creative_mode_tab.build_kit.wooden_blocks": "Wooden Blocks",
-  "fancy_tab_section.build_kit.main_items": "Platings and layers"
+  "creative_mode_tab.build_kit.build_kit_main": "Build Kit",
+  "fancy_tab_section.build_kit.wood_items": "Wood Items",
+  "fancy_tab_section.build_kit.stone_items": "Stone Items"
 }
